@@ -18,6 +18,7 @@ public class Google {
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		driver.get("https://google.com");
+		
 		String title = driver.getTitle();
 		Assert.assertEquals(title, "Google");
 		driver.quit();
